@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Ujira Job Application and Recruitment Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Ujira is a comprehensive job application and recruitment portal designed to connect job seekers with licensed nutritionists in Kenya. The platform allows users to register, search for jobs, apply for positions, and receive real-time notifications. Employers can post job listings, verify applicants, and manage applications.
 
-## Available Scripts
+## Features
+- **User Registration and Authentication:** Secure user registration and login using Supabase Auth.
+- **Role-Based Access Control:** Distinguish between users, employers, and admins with appropriate permissions.
+- **Job Listings:** Post, search, and manage job listings.
+- **Real-Time Notifications:** Receive notifications for job applications, updates, and more.
+- **Responsive Design:** Optimized for both desktop and mobile devices using Tailwind CSS.
 
-In the project directory, you can run:
+## Tech Stack
+- **Frontend:** React, JavaScript, Tailwind CSS, React Router
+- **Backend:** Node.js, Express, Supabase (PostgreSQL)
+- **Deployment:** Vercel (Frontend), Heroku (Backend)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js and npm installed on your machine
+- Supabase account and project set up
+- Git installed on your machine
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ujira-portal.git
+   cd ujira-portal
+Install dependencies:
 
-### `npm test`
+```bash
+npm install
+```
+### Create a .env file in the root directory and add your Supabase credentials:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```env
+REACT_APP_SUPABASE_URL=your-supabase-url
+REACT_APP_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+### Start the development server:
 
-### `npm run build`
+```bash
+npm start
+```
+## Backend Setup
+### Navigate to the backend directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+cd ujira-backend
+```
+### Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
+### Create a .env file in the root directory and add your Supabase credentials:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```env
+SUPABASE_URL=your-supabase-url
+SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+### Start the backend server:
 
-### `npm run eject`
+```bash
+node server.js
+```
+## Deployment
+### Frontend Deployment
+Deploy the frontend to Vercel:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Link your GitHub repository to Vercel.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Configure the build settings and deploy.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Backend Deployment
+Deploy the backend to Heroku:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a new Heroku app.
 
-## Learn More
+Link your GitHub repository to Heroku.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Configure environment variables and deploy.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-### Code Splitting
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For any inquiries, please contact us at support@ujiraportal.com.
