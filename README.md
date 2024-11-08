@@ -25,7 +25,7 @@ Ujira is a comprehensive job application and recruitment portal designed to conn
 ### Frontend Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ujira-portal.git
+   git clone https://github.com/Morg3an/ujira-portal.git
    cd ujira-portal
 Install dependencies:
 
